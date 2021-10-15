@@ -1,0 +1,45 @@
+{
+    "firstname": "Abah",
+    "lastname": "Edward",
+    "email": "abah.edward@decagon.dev",
+    "phonenumber": "+234 8144092629",
+    "address": "Lagos, Nigeria",
+    "educationhistory": [
+      {
+        "InstitutionName": "University of Jos",
+        "degreeoptained": "B.sc",
+        "startdate": "2015-12-07",
+        "enddate": "2021-04-28"    }
+  
+    ],
+    "workhistory": [
+      {
+        "organization": "Regency Int. Ltd",
+        "position": "procurement Officer",
+        "startdate": "2018-1-4",
+        "enddate": "2019-12-4"    },
+  {
+        "organization": "University of Calabar Teaching Hospital",
+        "position": "Research Asistant",
+        "startdate": "2019-1-8",
+        "enddate": "2020-10-23"    }
+    ],
+    "skills": [
+      {
+        "name": "C# | .Net Developer",
+        "level": 6    },
+                 {
+        "name": "Research Assistant",
+        "level": 5    }
+    ],
+    "projects": [
+      {
+        "name": "My Portfolio",
+        "description": "portfolio which contains my contact, recent picture, achievements, social media handle",
+        "projecturl": "github: adayesi"    },
+      {
+        "name": "Sickle cell anaemia",
+        "description": "research on how to improve the lives of sicklers"  }
+    ]
+  }
+  
