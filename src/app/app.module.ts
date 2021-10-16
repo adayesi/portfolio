@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
+import { RouterModule } from '@angular/router';
+import { SkillRatingsComponent } from './skill-ratings/skill-ratings.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
     PersonalPortFolioComponent,
     HeaderComponent,
     HomeComponent,
-    RecentProjectsComponent
+    RecentProjectsComponent,
+    SkillRatingsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
