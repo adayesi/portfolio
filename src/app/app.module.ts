@@ -10,6 +10,8 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
 import { RouterModule } from '@angular/router';
 import { SkillRatingsComponent } from './skill-ratings/skill-ratings.component';
 import { ContactComponent } from './contact/contact.component';
+import { UserService } from './_services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,14 +22,17 @@ import { ContactComponent } from './contact/contact.component';
     RecentProjectsComponent,
     SkillRatingsComponent,
     ContactComponent
+    
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     RouterModule
+    
   ],
-  providers: [],
+  providers: [{provide: 'API_BASE_URL', useValue: 'https://sq009portfolio.herokuapp.com/api/v1/'}, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

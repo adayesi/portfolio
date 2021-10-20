@@ -1,10 +1,10 @@
 <div class="tag">
-    <h5>
-        Skill: HTML
+    <h5 *ngFor = "let skill of skills">
+        Skill: {{skill.name}}
         <br>
-        level: 80% 
+        level: {{skill.level}}% 
     </h5>
-    <h5>
+    <!-- <h5>
         Skill: CSS
         <br>
         level: 80% 
@@ -13,5 +13,11 @@
         Skill: C#
         <br>
         level: 20% 
-    </h5>
+    </h5> -->
+   
     </div>
+
+    
+
+    
+  

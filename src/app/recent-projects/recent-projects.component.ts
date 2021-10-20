@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recent-projects.component.css']
 })
 export class RecentProjectsComponent implements OnInit {
-
+  pageTitle: string = 'Recent Projects';
   constructor() { }
 
   ngOnInit(): void {

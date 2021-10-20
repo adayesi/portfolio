@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+
+import { UserService } from '../_services/user.service';
+import { Skill } from '../Models/skill';
 
 @Component({
   selector: 'app-skill-ratings',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill-ratings.component.css']
 })
 export class SkillRatingsComponent implements OnInit {
-
-  constructor() { }
+  skills?: Skill[];
+  constructor(@Inject ('API_BASE_URL')  apiUrl: string, public _userService: UserService) { }
 
   ngOnInit(): void {
+    this._userService?.getUserData().subscribe((data: any) => {
+      this.skills = data.data.skills;
+      console.log(data.data)
+    },
+   
+    (error: any) => {
+      console.log(error)
+    }, () => {
+      console.log("completed")
+    });
   }
 
 }
